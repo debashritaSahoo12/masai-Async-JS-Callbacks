@@ -19,3 +19,7 @@ Promise.resolve().then(() => {
   console.log("Promise Task");//higher priority than setTimeoutand setInterval
 });
 console.log("End");//this statement is synchronous
+//explanation
+//"Start" and "End" are printed first because they are synchronous.
+//The promise is a microtask, so it gets added to the microtask queue, which is processed before the task queue.
+//The setTimeout callback is added to the task queue and executed after all microtasks have been handled.
