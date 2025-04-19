@@ -4,8 +4,8 @@
 //     After 5 seconds, stop the loading messages and log "Loaded successfully!".
 
 // Use setInterval to repeat the loading message and clearInterval to stop it after 5 seconds.
-let count=0
 function logging(){
+  let count = 0;
     let interval=setInterval(()=>{
         count++
         console.log("Loading...");
